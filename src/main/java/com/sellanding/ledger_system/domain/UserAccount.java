@@ -23,5 +23,5 @@ public class UserAccount {
     private BigDecimal balance;
 
     @Column(name = "portifolio")
-    private List<LedgerEntry> portifolio;
+    private List<Position> portifolio;
 }
