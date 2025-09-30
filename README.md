@@ -1,2 +1,2 @@
 # ledger-system
-주식 원장 시스템 
+ETF 원장 시스템 

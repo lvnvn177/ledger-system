@@ -2,6 +2,7 @@ package com.sellanding.ledger_system.domain;
 
 import java.time.LocalDateTime;
 
+import com.sellanding.ledger_system.domain.enums.AssetTicker;
 import com.sellanding.ledger_system.domain.enums.OrderStatus;
 import com.sellanding.ledger_system.domain.enums.OrderType;
 
@@ -25,6 +26,9 @@ public class Order {
 
     @Column(name = "order_type", nullable = false)
     private OrderType orderType; // Buy or Sell
+
+    @Column(name = "order_ticker", nullable = false)
+    private AssetTicker orderTicker; // 주문한 ETF 고유 티커
 
     @Column(nullable = false)
     private Long quantity; // 주문 수량 

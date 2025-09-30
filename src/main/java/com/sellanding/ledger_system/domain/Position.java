@@ -2,6 +2,8 @@ package com.sellanding.ledger_system.domain;
 
 import java.math.BigDecimal;
 
+import com.sellanding.ledger_system.domain.enums.AssetTicker;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -27,8 +29,8 @@ public class Position {
     @JoinColumn(name = "user_account_id", nullable = false)
     private UserAccount userAccount;
 
-    @Column(name = "asset_id", nullable = false)
-    private String assetId; // 주식 고유 코드 
+    @Column(name = "asset_ticker", nullable = false)
+    private AssetTicker assetTicker; // ETF 고유 티커  
 
     @Column(name = "quantity", nullable = false)
     private Long quantity; // 보유 수량 
