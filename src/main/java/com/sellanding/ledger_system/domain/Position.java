@@ -29,8 +29,10 @@ public class Position {
 
     @Column(name = "asset_id", nullable = false)
     private String assetId; // 주식 고유 코드 
+    
     @Column(name = "quantity", nullable = false)
     private Long quantity; // 보유 수량 
+
     @Column(name = "avg_buy_price", nullable = false)
     private BigDecimal avgBuyPrice;  // 평균 매입가 
    
