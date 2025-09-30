@@ -11,6 +11,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 
@@ -18,6 +19,7 @@ import jakarta.persistence.Id;
  *  주문 요청 정보 
  */
 @Entity
+@Table(name = "orders")
 public class Order {
     
     @Id

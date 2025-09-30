@@ -10,12 +10,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 /**
  * 고객 거래 기록
  */
 @Entity
+@Table(name = "transaction_history")
 public class TransactionHistory {
     
     @Id

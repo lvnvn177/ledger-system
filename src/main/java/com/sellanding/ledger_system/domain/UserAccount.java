@@ -8,12 +8,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 /**
  * 고객 정보 
  */
 @Entity
+@Table(name = "user_account")
 public class UserAccount {
 
     @Id
