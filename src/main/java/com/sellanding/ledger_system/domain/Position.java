@@ -15,7 +15,7 @@ import jakarta.persistence.ManyToOne;
 
 
 /**
- * 유저의 구매 자산
+ * 고객의 구매 자산
  * 
  */
 @Entity

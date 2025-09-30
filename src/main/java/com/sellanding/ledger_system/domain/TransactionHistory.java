@@ -13,7 +13,7 @@ import jakarta.persistence.Id;
 
 
 /**
- * 
+ * 고객 거래 기록
  */
 @Entity
 public class TransactionHistory {

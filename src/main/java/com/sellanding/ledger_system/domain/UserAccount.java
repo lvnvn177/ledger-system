@@ -9,6 +9,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
+/**
+ * 고객 정보 
+ */
 @Entity
 public class UserAccount {
 
