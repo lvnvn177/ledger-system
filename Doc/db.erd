@@ -1,0 +1,168 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": -9,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "dmugZyYCWwYiWgiOHWLXl",
+      "mq4lvKWVUVMAkqxKq3053",
+      "cnW60h7bO5QjIdPU_fjgO",
+      "SQtEfwOTu9jvyO8zZg9sF",
+      "P1ARDxz_QrdRTH0jtEu24",
+      "tIMIhxyv4_o7NPnTz1NWb"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "dmugZyYCWwYiWgiOHWLXl": {
+        "id": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "Position",
+        "comment": "구매 자산",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 200,
+          "y": 100,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212455976,
+          "createAt": 1759212443648
+        }
+      },
+      "mq4lvKWVUVMAkqxKq3053": {
+        "id": "mq4lvKWVUVMAkqxKq3053",
+        "name": "UserAccount",
+        "comment": "유저 정보",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 195,
+          "y": 261,
+          "zIndex": 7,
+          "widthName": 75,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212492708,
+          "createAt": 1759212465158
+        }
+      },
+      "cnW60h7bO5QjIdPU_fjgO": {
+        "id": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "Order",
+        "comment": "주문 ",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 198,
+          "y": 424,
+          "zIndex": 16,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212506905,
+          "createAt": 1759212493340
+        }
+      },
+      "SQtEfwOTu9jvyO8zZg9sF": {
+        "id": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "LedgerEntry",
+        "comment": "마스터 매매 기록",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 165,
+          "y": 679,
+          "zIndex": 25,
+          "widthName": 71,
+          "widthComment": 81,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212626677,
+          "createAt": 1759212512758
+        }
+      },
+      "P1ARDxz_QrdRTH0jtEu24": {
+        "id": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "TransactionHistory",
+        "comment": "사용자 매매 기록",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 163,
+          "y": 592,
+          "zIndex": 37,
+          "widthName": 109,
+          "widthComment": 81,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212622210,
+          "createAt": 1759212567879
+        }
+      },
+      "tIMIhxyv4_o7NPnTz1NWb": {
+        "id": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "Event",
+        "comment": "시스템 주요 이벤트",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 179,
+          "y": 785,
+          "zIndex": 59,
+          "widthName": 60,
+          "widthComment": 92,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1759212678674,
+          "createAt": 1759212656212
+        }
+      }
+    },
+    "tableColumnEntities": {},
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

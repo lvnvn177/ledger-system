@@ -13,7 +13,7 @@ import jakarta.persistence.ManyToOne;
 
 
 /**
- * 유저의 구매 포지션
+ * 유저의 구매 자산
  * 
  */
 @Entity
@@ -29,7 +29,7 @@ public class Position {
 
     @Column(name = "asset_id", nullable = false)
     private String assetId; // 주식 고유 코드 
-    
+
     @Column(name = "quantity", nullable = false)
     private Long quantity; // 보유 수량 
 
