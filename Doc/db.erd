@@ -5,7 +5,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -9,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -48,18 +48,30 @@
         "id": "dmugZyYCWwYiWgiOHWLXl",
         "name": "Position",
         "comment": "구매 자산",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "Ty24JuPI14xywPsecf_Xe",
+          "aHDR5QO-pa9S95p3nAIGd",
+          "ycqRphXniSZda5t3uGogE",
+          "e3jQn1232jYkRrlq04B93",
+          "1ENJ_CjwIemeQS18fdyfu"
+        ],
+        "seqColumnIds": [
+          "Ty24JuPI14xywPsecf_Xe",
+          "aHDR5QO-pa9S95p3nAIGd",
+          "ycqRphXniSZda5t3uGogE",
+          "e3jQn1232jYkRrlq04B93",
+          "1ENJ_CjwIemeQS18fdyfu"
+        ],
         "ui": {
-          "x": 200,
-          "y": 100,
+          "x": 232.6818,
+          "y": 266.3182,
           "zIndex": 2,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212455976,
+          "updateAt": 1759280064556,
           "createAt": 1759212443648
         }
       },
@@ -67,18 +79,28 @@
         "id": "mq4lvKWVUVMAkqxKq3053",
         "name": "UserAccount",
         "comment": "유저 정보",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "7Pvbf8yuPlbwC8F_i8c3f",
+          "daDPdBnDW2tBGFQhEu1lW",
+          "TTYNLbpnHV_UcACUGSbse",
+          "nfrpS_xjr3qy5WruYHbdV"
+        ],
+        "seqColumnIds": [
+          "7Pvbf8yuPlbwC8F_i8c3f",
+          "daDPdBnDW2tBGFQhEu1lW",
+          "TTYNLbpnHV_UcACUGSbse",
+          "nfrpS_xjr3qy5WruYHbdV"
+        ],
         "ui": {
-          "x": 195,
-          "y": 261,
+          "x": 226.1819,
+          "y": 477.7272,
           "zIndex": 7,
           "widthName": 75,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212492708,
+          "updateAt": 1759280062556,
           "createAt": 1759212465158
         }
       },
@@ -86,18 +108,32 @@
         "id": "cnW60h7bO5QjIdPU_fjgO",
         "name": "Order",
         "comment": "주문 ",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "nFFsBX7IUqEgSUcPb6ukZ",
+          "USoGmO0dOVwToMef1EhHC",
+          "QxMA9cGGGPq1hgPYw_6kk",
+          "pSEdrgCsH9i9wgXH8PEGf",
+          "wZF4dTDP4q58yZZztyfr7",
+          "Zt8n9XCb56AACjV3D69_m"
+        ],
+        "seqColumnIds": [
+          "nFFsBX7IUqEgSUcPb6ukZ",
+          "USoGmO0dOVwToMef1EhHC",
+          "QxMA9cGGGPq1hgPYw_6kk",
+          "pSEdrgCsH9i9wgXH8PEGf",
+          "wZF4dTDP4q58yZZztyfr7",
+          "Zt8n9XCb56AACjV3D69_m"
+        ],
         "ui": {
-          "x": 198,
-          "y": 424,
+          "x": 233.3182,
+          "y": 666.3182,
           "zIndex": 16,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212506905,
+          "updateAt": 1759280060556,
           "createAt": 1759212493340
         }
       },
@@ -105,18 +141,48 @@
         "id": "SQtEfwOTu9jvyO8zZg9sF",
         "name": "LedgerEntry",
         "comment": "마스터 매매 기록",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "lAotf3q9ZlzjPgCQZE9Sw",
+          "H4lEXBLLATFe-Lf0WkVxo",
+          "g31wcxOhWtMA2sBHP2byD",
+          "El2h34_zlxpXeT-MGRuPn",
+          "zjvoo4gBZQ71Bi8Zeq0fc",
+          "v1eAnqdbuGrl9tbschtod",
+          "tosl9iz0UHPFWhuUm83L7",
+          "jibUQdNWSLfD6Homkba8_",
+          "jj6IYw0WggL3K_NnxkR7m",
+          "WwFTSnnliQ7oVcjzxpRp9",
+          "C1IgmcGHxKmArFrtxj6EV",
+          "TNy5hvBBB1ZuGexLCWTUK",
+          "AY_crM_esY1_VllMeMxsE",
+          "XZqj-2-joCh6A9To9AIA0"
+        ],
+        "seqColumnIds": [
+          "lAotf3q9ZlzjPgCQZE9Sw",
+          "H4lEXBLLATFe-Lf0WkVxo",
+          "g31wcxOhWtMA2sBHP2byD",
+          "El2h34_zlxpXeT-MGRuPn",
+          "zjvoo4gBZQ71Bi8Zeq0fc",
+          "v1eAnqdbuGrl9tbschtod",
+          "tosl9iz0UHPFWhuUm83L7",
+          "jibUQdNWSLfD6Homkba8_",
+          "jj6IYw0WggL3K_NnxkR7m",
+          "WwFTSnnliQ7oVcjzxpRp9",
+          "C1IgmcGHxKmArFrtxj6EV",
+          "TNy5hvBBB1ZuGexLCWTUK",
+          "AY_crM_esY1_VllMeMxsE",
+          "XZqj-2-joCh6A9To9AIA0"
+        ],
         "ui": {
-          "x": 165,
-          "y": 679,
+          "x": 659.5909,
+          "y": 261.5909,
           "zIndex": 25,
           "widthName": 71,
           "widthComment": 81,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212626677,
+          "updateAt": 1759292788590,
           "createAt": 1759212512758
         }
       },
@@ -124,18 +190,30 @@
         "id": "P1ARDxz_QrdRTH0jtEu24",
         "name": "TransactionHistory",
         "comment": "사용자 매매 기록",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "UHA3yjtQ1FeUxUycHS-VN",
+          "ZAn5J-cm34YNGWfmeosZv",
+          "3sLBAAqeCCCw-qkP_dgE1",
+          "GSNSisddQntxXDBQSNDOV",
+          "J5kiWAXsP05e1iWk4RZ_a"
+        ],
+        "seqColumnIds": [
+          "UHA3yjtQ1FeUxUycHS-VN",
+          "ZAn5J-cm34YNGWfmeosZv",
+          "3sLBAAqeCCCw-qkP_dgE1",
+          "GSNSisddQntxXDBQSNDOV",
+          "J5kiWAXsP05e1iWk4RZ_a"
+        ],
         "ui": {
-          "x": 163,
-          "y": 592,
+          "x": 217.1364,
+          "y": 911,
           "zIndex": 37,
           "widthName": 109,
           "widthComment": 81,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212622210,
+          "updateAt": 1759280053557,
           "createAt": 1759212567879
         }
       },
@@ -146,20 +224,701 @@
         "columnIds": [],
         "seqColumnIds": [],
         "ui": {
-          "x": 179,
-          "y": 785,
+          "x": 663.8636,
+          "y": 719.3636,
           "zIndex": 59,
           "widthName": 60,
           "widthComment": 92,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759212678674,
+          "updateAt": 1759280072556,
           "createAt": 1759212656212
         }
       }
     },
-    "tableColumnEntities": {},
+    "tableColumnEntities": {
+      "Ty24JuPI14xywPsecf_Xe": {
+        "id": "Ty24JuPI14xywPsecf_Xe",
+        "tableId": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279546864,
+          "createAt": 1759279353700
+        }
+      },
+      "aHDR5QO-pa9S95p3nAIGd": {
+        "id": "aHDR5QO-pa9S95p3nAIGd",
+        "tableId": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "userAccount",
+        "comment": "구매한 고객",
+        "dataType": "UserAccount",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 73,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279857810,
+          "createAt": 1759279354102
+        }
+      },
+      "ycqRphXniSZda5t3uGogE": {
+        "id": "ycqRphXniSZda5t3uGogE",
+        "tableId": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "assetTicker",
+        "comment": "종목 고유 티커",
+        "dataType": "AssetTicker",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 67,
+          "widthComment": 71,
+          "widthDataType": 68,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279499900,
+          "createAt": 1759279354481
+        }
+      },
+      "e3jQn1232jYkRrlq04B93": {
+        "id": "e3jQn1232jYkRrlq04B93",
+        "tableId": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "quantity",
+        "comment": "수량",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279502828,
+          "createAt": 1759279354852
+        }
+      },
+      "1ENJ_CjwIemeQS18fdyfu": {
+        "id": "1ENJ_CjwIemeQS18fdyfu",
+        "tableId": "dmugZyYCWwYiWgiOHWLXl",
+        "name": "avgBuyPrice",
+        "comment": "평균 매수가",
+        "dataType": "BigDecimal",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 72,
+          "widthComment": 60,
+          "widthDataType": 66,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279513163,
+          "createAt": 1759279355066
+        }
+      },
+      "7Pvbf8yuPlbwC8F_i8c3f": {
+        "id": "7Pvbf8yuPlbwC8F_i8c3f",
+        "tableId": "mq4lvKWVUVMAkqxKq3053",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279544972,
+          "createAt": 1759279524715
+        }
+      },
+      "daDPdBnDW2tBGFQhEu1lW": {
+        "id": "daDPdBnDW2tBGFQhEu1lW",
+        "tableId": "mq4lvKWVUVMAkqxKq3053",
+        "name": "username",
+        "comment": "이름",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279601867,
+          "createAt": 1759279524994
+        }
+      },
+      "TTYNLbpnHV_UcACUGSbse": {
+        "id": "TTYNLbpnHV_UcACUGSbse",
+        "tableId": "mq4lvKWVUVMAkqxKq3053",
+        "name": "balance",
+        "comment": "총 재산",
+        "dataType": "BigDecimal",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 66,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279628283,
+          "createAt": 1759279525446
+        }
+      },
+      "nfrpS_xjr3qy5WruYHbdV": {
+        "id": "nfrpS_xjr3qy5WruYHbdV",
+        "tableId": "mq4lvKWVUVMAkqxKq3053",
+        "name": "portifolio",
+        "comment": "구매한 자산 목록",
+        "dataType": "List<Position>",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 81,
+          "widthDataType": 82,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279616614,
+          "createAt": 1759279525660
+        }
+      },
+      "nFFsBX7IUqEgSUcPb6ukZ": {
+        "id": "nFFsBX7IUqEgSUcPb6ukZ",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279666351,
+          "createAt": 1759279643965
+        }
+      },
+      "USoGmO0dOVwToMef1EhHC": {
+        "id": "USoGmO0dOVwToMef1EhHC",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "orderType",
+        "comment": "주문 유형",
+        "dataType": "OrderType",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 61,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279754722,
+          "createAt": 1759279644347
+        }
+      },
+      "QxMA9cGGGPq1hgPYw_6kk": {
+        "id": "QxMA9cGGGPq1hgPYw_6kk",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "orderTicker",
+        "comment": "종목 고유 티커",
+        "dataType": "AssetTicker",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 66,
+          "widthComment": 71,
+          "widthDataType": 68,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279750626,
+          "createAt": 1759279644821
+        }
+      },
+      "pSEdrgCsH9i9wgXH8PEGf": {
+        "id": "pSEdrgCsH9i9wgXH8PEGf",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "quantity",
+        "comment": "수량",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279758150,
+          "createAt": 1759279645955
+        }
+      },
+      "wZF4dTDP4q58yZZztyfr7": {
+        "id": "wZF4dTDP4q58yZZztyfr7",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "status",
+        "comment": "상태",
+        "dataType": "OrderStatus",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 71,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279766553,
+          "createAt": 1759279646269
+        }
+      },
+      "Zt8n9XCb56AACjV3D69_m": {
+        "id": "Zt8n9XCb56AACjV3D69_m",
+        "tableId": "cnW60h7bO5QjIdPU_fjgO",
+        "name": "orderTime",
+        "comment": "주문 시간",
+        "dataType": "LocalDateTime",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 85,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279771695,
+          "createAt": 1759279646417
+        }
+      },
+      "UHA3yjtQ1FeUxUycHS-VN": {
+        "id": "UHA3yjtQ1FeUxUycHS-VN",
+        "tableId": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279800992,
+          "createAt": 1759279782609
+        }
+      },
+      "ZAn5J-cm34YNGWfmeosZv": {
+        "id": "ZAn5J-cm34YNGWfmeosZv",
+        "tableId": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "userId",
+        "comment": "고객 ID",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279851689,
+          "createAt": 1759279783160
+        }
+      },
+      "3sLBAAqeCCCw-qkP_dgE1": {
+        "id": "3sLBAAqeCCCw-qkP_dgE1",
+        "tableId": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "orders",
+        "comment": "주문 목록",
+        "dataType": "List<Order>",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 70,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279872817,
+          "createAt": 1759279783364
+        }
+      },
+      "GSNSisddQntxXDBQSNDOV": {
+        "id": "GSNSisddQntxXDBQSNDOV",
+        "tableId": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "status",
+        "comment": "현재 거래 상태",
+        "dataType": "TransactionStatus",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 71,
+          "widthDataType": 104,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279884363,
+          "createAt": 1759279783801
+        }
+      },
+      "J5kiWAXsP05e1iWk4RZ_a": {
+        "id": "J5kiWAXsP05e1iWk4RZ_a",
+        "tableId": "P1ARDxz_QrdRTH0jtEu24",
+        "name": "translationTime",
+        "comment": "최근 거래 시간",
+        "dataType": "LocalDateTime",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 89,
+          "widthComment": 71,
+          "widthDataType": 85,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759279908548,
+          "createAt": 1759279784025
+        }
+      },
+      "lAotf3q9ZlzjPgCQZE9Sw": {
+        "id": "lAotf3q9ZlzjPgCQZE9Sw",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759280076377,
+          "createAt": 1759279992978
+        }
+      },
+      "H4lEXBLLATFe-Lf0WkVxo": {
+        "id": "H4lEXBLLATFe-Lf0WkVxo",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "entryId",
+        "comment": "원장 고유 ID",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292864302,
+          "createAt": 1759279994208
+        }
+      },
+      "g31wcxOhWtMA2sBHP2byD": {
+        "id": "g31wcxOhWtMA2sBHP2byD",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "userId",
+        "comment": "연관 고객 ID",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292698151,
+          "createAt": 1759279994590
+        }
+      },
+      "El2h34_zlxpXeT-MGRuPn": {
+        "id": "El2h34_zlxpXeT-MGRuPn",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "amount",
+        "comment": "거래 금액",
+        "dataType": "BigDecimal",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 66,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292785986,
+          "createAt": 1759279996617
+        }
+      },
+      "zjvoo4gBZQ71Bi8Zeq0fc": {
+        "id": "zjvoo4gBZQ71Bi8Zeq0fc",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "type",
+        "comment": "거래 유형",
+        "dataType": "LedgerEntryType",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 98,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292728476,
+          "createAt": 1759279996897
+        }
+      },
+      "v1eAnqdbuGrl9tbschtod": {
+        "id": "v1eAnqdbuGrl9tbschtod",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "timestamp",
+        "comment": "거래 일시",
+        "dataType": "LocalDateTime",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 60,
+          "widthDataType": 85,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292732709,
+          "createAt": 1759280000285
+        }
+      },
+      "tosl9iz0UHPFWhuUm83L7": {
+        "id": "tosl9iz0UHPFWhuUm83L7",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "description",
+        "comment": "설명",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 65,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292735079,
+          "createAt": 1759280000620
+        }
+      },
+      "jibUQdNWSLfD6Homkba8_": {
+        "id": "jibUQdNWSLfD6Homkba8_",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "referenceId",
+        "comment": "거래 원인 - 원본거래, 이벤트",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 67,
+          "widthComment": 139,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292815997,
+          "createAt": 1759280000947
+        }
+      },
+      "jj6IYw0WggL3K_NnxkR7m": {
+        "id": "jj6IYw0WggL3K_NnxkR7m",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "balanceAfter",
+        "comment": "거래 후 잔액",
+        "dataType": "BigDecimal",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 74,
+          "widthComment": 61,
+          "widthDataType": 66,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292824324,
+          "createAt": 1759280001918
+        }
+      },
+      "WwFTSnnliQ7oVcjzxpRp9": {
+        "id": "WwFTSnnliQ7oVcjzxpRp9",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "assetTicker",
+        "comment": "거래 종목 티커",
+        "dataType": "AssetTicker",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 67,
+          "widthComment": 71,
+          "widthDataType": 68,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292767133,
+          "createAt": 1759280002196
+        }
+      },
+      "C1IgmcGHxKmArFrtxj6EV": {
+        "id": "C1IgmcGHxKmArFrtxj6EV",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "assetQuantity",
+        "comment": "거래 수량",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 80,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292788476,
+          "createAt": 1759280003029
+        }
+      },
+      "TNy5hvBBB1ZuGexLCWTUK": {
+        "id": "TNy5hvBBB1ZuGexLCWTUK",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "assetPrice",
+        "comment": "기록 시점의 종목 가격",
+        "dataType": "BigDecimal",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 106,
+          "widthDataType": 66,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292836025,
+          "createAt": 1759280003309
+        }
+      },
+      "AY_crM_esY1_VllMeMxsE": {
+        "id": "AY_crM_esY1_VllMeMxsE",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "verified",
+        "comment": "기록 검증 여부 ",
+        "dataType": "boolean",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 74,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292844964,
+          "createAt": 1759280004412
+        }
+      },
+      "XZqj-2-joCh6A9To9AIA0": {
+        "id": "XZqj-2-joCh6A9To9AIA0",
+        "tableId": "SQtEfwOTu9jvyO8zZg9sF",
+        "name": "version",
+        "comment": "락 버전",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759292849642,
+          "createAt": 1759280004760
+        }
+      }
+    },
     "relationshipEntities": {},
     "indexEntities": {},
     "indexColumnEntities": {},

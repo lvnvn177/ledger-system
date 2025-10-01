@@ -6,9 +6,13 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.UUID;
 
+import com.sellanding.ledger_system.domain.enums.AssetTicker;
 import com.sellanding.ledger_system.domain.enums.LedgerEntryType;
 
-
+/**
+ * 원장에 기록되는 모든 거래 내역을 나타내는 도메인 클래스
+ * 불변성을 보장하기 위해 setter 없이 구현
+ */
 @Entity
 @Table(name = "ledger_entries")
 public class LedgerEntry {
@@ -43,7 +47,7 @@ public class LedgerEntry {
     private BigDecimal balanceAfter;
 
     @Column
-    private String assetSymbol;
+    private AssetTicker assetTicker;
 
     @Column
     private Long assetQuantity;
@@ -103,8 +107,8 @@ public class LedgerEntry {
         return balanceAfter;
     }
 
-    public String getAssetSymbol() {
-        return assetSymbol;
+    public AssetTicker getAssetTicker() {
+        return assetTicker;
     }
 
     public Long getAssetQuantity() {
@@ -165,8 +169,8 @@ public class LedgerEntry {
             return this;
         }
 
-        public LedgerEntryBuilder assetSymbol(String assetSymbol) {
-            entry.assetSymbol = assetSymbol;
+        public LedgerEntryBuilder assetTicker(AssetTicker assetTicker) {
+            entry.assetTicker = assetTicker;
             return this;
         }
 
@@ -209,9 +213,9 @@ public class LedgerEntry {
             }
             
             // 특정 타입일 때 필수 필드 검증
-            if ((entry.type == LedgerEntryType.TRADE_BUY || entry.type == LedgerEntryType.TRADE_SELL) 
-                    && entry.assetSymbol == null) {
-                throw new IllegalStateException("Asset symbol is required for trade entries");
+            if ((entry.type == LedgerEntryType.TRADE_BUY || entry.type == LedgerEntryType.TRADE_SELL)
+                    && entry.assetTicker == null) {
+                throw new IllegalStateException("Asset ticker is required for trade entries");
             }
 
             return entry;
