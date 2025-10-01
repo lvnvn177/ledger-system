@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollTop": -73.5141,
+    "scrollLeft": -36,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -221,18 +221,38 @@
         "id": "tIMIhxyv4_o7NPnTz1NWb",
         "name": "Event",
         "comment": "시스템 주요 이벤트",
-        "columnIds": [],
-        "seqColumnIds": [],
+        "columnIds": [
+          "8pPySVcOykYl1mShKfbGJ",
+          "HPavE1uDxwAHOUx3zI5t7",
+          "mezOYj0KfKBQxQSolh3IM",
+          "oQwrDRHmbTAYtTpIVJWaU",
+          "n1ujRuz45F-I-WvU3G7_u",
+          "33z1KWbH0DrUB9bXhLFPc",
+          "9QgUp_MZCMz-Wr8Oo1SbK",
+          "A9hGJZqG3_VG1xHwBozLt",
+          "0uK5JBCJJAmJ4UYWbUh-N"
+        ],
+        "seqColumnIds": [
+          "8pPySVcOykYl1mShKfbGJ",
+          "HPavE1uDxwAHOUx3zI5t7",
+          "mezOYj0KfKBQxQSolh3IM",
+          "oQwrDRHmbTAYtTpIVJWaU",
+          "n1ujRuz45F-I-WvU3G7_u",
+          "33z1KWbH0DrUB9bXhLFPc",
+          "9QgUp_MZCMz-Wr8Oo1SbK",
+          "A9hGJZqG3_VG1xHwBozLt",
+          "0uK5JBCJJAmJ4UYWbUh-N"
+        ],
         "ui": {
-          "x": 663.8636,
-          "y": 719.3636,
+          "x": 679.8636,
+          "y": 698.3636,
           "zIndex": 59,
           "widthName": 60,
           "widthComment": 92,
           "color": ""
         },
         "meta": {
-          "updateAt": 1759280072556,
+          "updateAt": 1759293879539,
           "createAt": 1759212656212
         }
       }
@@ -916,6 +936,186 @@
         "meta": {
           "updateAt": 1759292849642,
           "createAt": 1759280004760
+        }
+      },
+      "8pPySVcOykYl1mShKfbGJ": {
+        "id": "8pPySVcOykYl1mShKfbGJ",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "id",
+        "comment": "",
+        "dataType": "Long",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293707832,
+          "createAt": 1759293666231
+        }
+      },
+      "HPavE1uDxwAHOUx3zI5t7": {
+        "id": "HPavE1uDxwAHOUx3zI5t7",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "eventId",
+        "comment": "이벤트 고유 ID",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 73,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293826058,
+          "createAt": 1759293666658
+        }
+      },
+      "oQwrDRHmbTAYtTpIVJWaU": {
+        "id": "oQwrDRHmbTAYtTpIVJWaU",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "aggregateId",
+        "comment": "관련 도메인 객체",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 70,
+          "widthComment": 81,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293847492,
+          "createAt": 1759293667120
+        }
+      },
+      "n1ujRuz45F-I-WvU3G7_u": {
+        "id": "n1ujRuz45F-I-WvU3G7_u",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "version",
+        "comment": "관련 도메인 객체 버전",
+        "dataType": "Integer",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 106,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293864856,
+          "createAt": 1759293667751
+        }
+      },
+      "33z1KWbH0DrUB9bXhLFPc": {
+        "id": "33z1KWbH0DrUB9bXhLFPc",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "timestamp",
+        "comment": "이벤트 발생 시각",
+        "dataType": "LocalDateTime",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 81,
+          "widthDataType": 85,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293876862,
+          "createAt": 1759293693411
+        }
+      },
+      "9QgUp_MZCMz-Wr8Oo1SbK": {
+        "id": "9QgUp_MZCMz-Wr8Oo1SbK",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "eventData",
+        "comment": "이벤트 상세 데이터",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 92,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293884142,
+          "createAt": 1759293694133
+        }
+      },
+      "A9hGJZqG3_VG1xHwBozLt": {
+        "id": "A9hGJZqG3_VG1xHwBozLt",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "metadata",
+        "comment": "이벤트 메타 데이터",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 92,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293889065,
+          "createAt": 1759293694672
+        }
+      },
+      "0uK5JBCJJAmJ4UYWbUh-N": {
+        "id": "0uK5JBCJJAmJ4UYWbUh-N",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "userId",
+        "comment": "이벤트를 발생 시킨 고객 ID",
+        "dataType": "String",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 131,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293897082,
+          "createAt": 1759293695043
+        }
+      },
+      "mezOYj0KfKBQxQSolh3IM": {
+        "id": "mezOYj0KfKBQxQSolh3IM",
+        "tableId": "tIMIhxyv4_o7NPnTz1NWb",
+        "name": "eventType",
+        "comment": "이벤트 유형",
+        "dataType": "EventType",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 61,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1759293837984,
+          "createAt": 1759293695312
         }
       }
     },

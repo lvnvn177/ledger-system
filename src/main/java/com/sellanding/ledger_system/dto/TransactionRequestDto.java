@@ -1,16 +1,19 @@
 package com.sellanding.ledger_system.dto;
 
+import com.sellanding.ledger_system.domain.enums.AssetTicker;
+import com.sellanding.ledger_system.domain.enums.OrderSide;
+import com.sellanding.ledger_system.domain.enums.OrderType;
+import lombok.Getter;
+
 import java.math.BigDecimal;
 
-import com.sellanding.ledger_system.domain.enums.OrderType;
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 @Getter
-@NoArgsConstructor
 public class TransactionRequestDto {
+
+    private Long userId;
+    private AssetTicker assetTicker;
     private OrderType orderType;
-    private BigDecimal price;
+    private OrderSide side;
     private Long quantity;
+    private BigDecimal price;
 }

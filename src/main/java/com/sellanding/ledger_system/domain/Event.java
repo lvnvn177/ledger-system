@@ -3,7 +3,6 @@ package com.sellanding.ledger_system.domain;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import javax.swing.event.DocumentEvent.EventType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+import com.sellanding.ledger_system.domain.enums.EventType;
 /**
  * 원장 시스템 내 모든 이벤트를 기록하는 도메인 클래스
  * 이벤트 소싱 패턴 구현을 위한 불변 객체로 설계 
