@@ -8,6 +8,7 @@ import com.sellanding.ledger_system.domain.enums.LedgerEntryType;
 import com.sellanding.ledger_system.domain.enums.OrderSide;
 import com.sellanding.ledger_system.domain.enums.OrderStatus;
 import com.sellanding.ledger_system.dto.LedgerEntryDto;
+import com.sellanding.ledger_system.dto.OrderStatusDto;
 import com.sellanding.ledger_system.dto.TransactionRequestDto;
 import com.sellanding.ledger_system.dto.TransactionResponseDto;
 import com.sellanding.ledger_system.repositories.LedgerRepository;
@@ -60,6 +61,27 @@ public class LedgerService {
         // eventPublisher.publishOrderCompletedEvent(order);
 
         return TransactionResponseDto.from(order);
+    }
+
+    /**
+     * 특정 주문을 취소 
+     * PENDING 상태의 주문만 취소 가능 
+     * @param orderId 취소할 주문 ID
+     * @return 취소된 주문 상태 정보 
+     */
+    @Transactional
+    public OrderStatusDto.Response cancelOrder(Long orderId) {
+        Order order = orderRepository.findById(orderId)
+            .orElseThrow( () -> new EntityNotFoundException("주문을 찾을 수 없습니다. " + orderId));
+        
+        if(order.getStatus() != OrderStatus.PENDING) {
+            throw new IllegalStateException("PENDING 상태의 주문만 취소할 수 있습니다. 현재 상태: " + order.getStatus());
+        }
+        
+        order.updateStatus(OrderStatus.CANCELED);
+        orderRepository.save(order);
+        
+        return OrderStatusDto.Response.from(order);
     }
 
     /**

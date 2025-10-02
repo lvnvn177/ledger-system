@@ -1,5 +1,6 @@
 package com.sellanding.ledger_system.dto;
 
+import com.sellanding.ledger_system.domain.Order;
 import com.sellanding.ledger_system.domain.enums.OrderStatus;
 
 import jakarta.validation.constraints.NotNull;
@@ -30,9 +31,13 @@ public final class OrderStatusDto {
         private final Long orderId;
         private final OrderStatus status;
 
-        private Response(Long orderId, OrderStatus status) {
+        public Response(Long orderId, OrderStatus status) {
             this.orderId = orderId;
             this.status = status;
+        }
+
+        public static Response from(Order order) {
+            return new Response(order.getId(), order.getStatus());
         }
 
         public Long getOrderId() {
