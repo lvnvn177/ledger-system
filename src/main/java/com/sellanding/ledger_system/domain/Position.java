@@ -18,7 +18,7 @@ import lombok.Builder;
 
 
 /**
- * 고객의 구매 자산
+ * 고객이 보유한 특정 자산
  * 
  */
 @Entity
