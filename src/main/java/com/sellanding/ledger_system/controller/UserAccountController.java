@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sellanding.ledger_system.dto.CashTransactionDto;
 import com.sellanding.ledger_system.dto.LedgerEntryDto;
 import com.sellanding.ledger_system.dto.UserAccountDto;
 import com.sellanding.ledger_system.services.LedgerService;
@@ -61,4 +62,36 @@ public class UserAccountController {
         List<LedgerEntryDto> history = ledgerService.getLedgerHistory(accountId, startDate, endDate);
         return ResponseEntity.ok(history);
     }
+
+    /**
+     * 사용자 계좌에 현금을 입금
+     * @param accountId 입금할 사용자 ID
+     * @param requestDto 입금 요청 데이터 (금액)
+     * @return 입금 후 사용자 계좌의 새로운 잔액 정보 
+     */
+    @PostMapping("/{accountId}/deposit")
+    public ResponseEntity<CashTransactionDto.Response> depositCash(
+        @PathVariable("accoundId") Long accountId,
+        @Valid @RequestBody CashTransactionDto.Request requestDto) {
+     
+        CashTransactionDto.Response response = userAccountService.depositCash(accountId, requestDto);
+        return ResponseEntity.ok(response);
+    }
+
+    /**
+     * 사용자 계좌에서 현금을 출금하는 API
+     * @param accountId 출금할 사용자 ID
+     * @param requestDto 출금 요청 데이터 (금액)
+     * @return 출금 후 사용자 계좌의 새로운 잔액 정보
+     */
+    @PostMapping("/{accountId}/withdraw")
+    public ResponseEntity<CashTransactionDto.Response> withdrawCash(
+        @PathVariable("accountId") Long accountId,
+        @Valid @RequestBody CashTransactionDto.Request requestDto) {
+
+
+        CashTransactionDto.Response response = userAccountService.withDrawCash(accountId, requestDto);
+        return ResponseEntity.ok(response);
+    }
+    
 }
