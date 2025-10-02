@@ -23,7 +23,7 @@ public interface OrderRepository extends JpaRepository<Order, Long>{
      * @param userId 사용자 ID
      * @return 해당 사용자의 모든 주문 목록
      */
-    List<Order> findByUserId(Long userId);
+    List<Order> findByUserAccountId(Long userId);
 
     /**
      * 특정 사용자의 특정 상태 주문을 조회
@@ -32,7 +32,7 @@ public interface OrderRepository extends JpaRepository<Order, Long>{
      * @param status 조회할 주문 상태
      * @return 조건에 맞는 주문 목록
      */
-    List<Order> findByUserIdAndStatus(Long userId, OrderStatus status);
+    List<Order> findByUserAccountIdAndStatus(Long userId, OrderStatus status);
 
     /**
      * 특정 상태의 모든 주문을 조회
@@ -49,7 +49,7 @@ public interface OrderRepository extends JpaRepository<Order, Long>{
      * @param assetTicker 조회할 자산의 티커
      * @return 조건에 맞는 주문 목록
      */
-    List<Order> findByUserIdAndAssetTicker(Long userId, AssetTicker assetTicker);
+    List<Order> findByUserAccountIdAndAssetTicker(Long userId, AssetTicker assetTicker);
 
     /**
      * 특정 사용자의 특정 주문을 조회
@@ -58,5 +58,5 @@ public interface OrderRepository extends JpaRepository<Order, Long>{
      * @param orderId 주문 ID
      * @return 찾은 주문(Optional)
      */
-    Optional<Order> findByUserIdAndId(Long userId, Long orderId);
+    Optional<Order> findByUserAccountIdAndId(Long userId, Long orderId);
 }

@@ -14,7 +14,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 
 /**
@@ -23,6 +25,7 @@ import lombok.Builder;
  */
 @Entity
 @Table(name = "position")
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Position {
     
     @Id

@@ -100,7 +100,7 @@ public interface EventRepository extends JpaRepository<Event, Long> {
      * @param endDate 조회 종료 날짜
      * @return 조건에 맞는 이벤트 목록
      */
-    List<Event> findByEventTypeAndTimestampBetween(
+    List<Event> findByEventTypeAndTimeStampBetween(
         EventType eventType, LocalDateTime startDate, LocalDateTime endDate);
     
     /**

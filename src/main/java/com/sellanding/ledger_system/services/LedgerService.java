@@ -103,7 +103,7 @@ public class LedgerService {
      * 매도 주문을 처리합니다.
      */
     private void processSellOrder(UserAccount user, Order order) {
-        Position position = user.getPortfolios().stream()
+        Position position = user.getPortfolio().stream()
                 .filter(p -> p.getAssetTicker().equals(order.getAssetTicker()))
                 .findFirst()
                 .orElseThrow(() -> new IllegalStateException("보유하지 않은 자산입니다."));
@@ -123,7 +123,7 @@ public class LedgerService {
      * 사용자의 자산 포지션을 업데이트합니다.
      */
     private void updateUserPosition(UserAccount user, Order order, OrderSide side) {
-        Optional<Position> existingPosition = user.getPortfolios().stream()
+        Optional<Position> existingPosition = user.getPortfolio().stream()
                 .filter(p -> p.getAssetTicker().equals(order.getAssetTicker()))
                 .findFirst();
 

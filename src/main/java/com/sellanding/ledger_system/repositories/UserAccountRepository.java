@@ -33,7 +33,7 @@ public interface UserAccountRepository extends JpaRepository<UserAccount, Long> 
      * @param userId 사용자 ID
      * @return 포트폴리오를 포함한 사용자 계정(Optional)
      */
-    @Query("SELECT ua FROM UserAccount ua JOIN FETCH ua.protfolios " +
+    @Query("SELECT ua FROM UserAccount ua JOIN FETCH ua.portfolio " +
            "WHERE ua.id = :userId")
     Optional<UserAccount> findWithPortfoliosByUserId(@Param("userId") Long userId);
 
@@ -43,7 +43,7 @@ public interface UserAccountRepository extends JpaRepository<UserAccount, Long> 
      * @param assetTicker 조회할 자산의 티커
      * @return 해당 자산을 보유한 모든 사용자 목록
      */
-    @Query("SELECT DISTINCT ua FROM UserAccount ua JOIN ua.portfolios p " +
+    @Query("SELECT DISTINCT ua FROM UserAccount ua JOIN ua.portfolio p " +
           "WHERE p.assetTicker = :assetTicker")
     List<UserAccount> findUsersWithSpecificAsset(@Param("assetTicker") AssetTicker assetTicker);
     

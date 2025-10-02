@@ -54,7 +54,7 @@ public final class UserAccountDto {
         }
 
         public static Response from(UserAccount userAccount) {
-            List<PositionDto> positionDtos = userAccount.getPortfolios().stream()
+            List<PositionDto> positionDtos = userAccount.getPortfolio().stream()
                 .map(PositionDto::from)
                 .collect(Collectors.toList());
             return new Response(

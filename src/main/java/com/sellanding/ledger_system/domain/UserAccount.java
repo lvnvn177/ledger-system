@@ -38,7 +38,7 @@ public class UserAccount {
     private BigDecimal balance;
 
     @OneToMany(mappedBy = "userAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
-private List<Position> portfolios = new ArrayList<>();
+private List<Position> portfolio = new ArrayList<>();
 
     @Builder
     public UserAccount(String username, BigDecimal balance) {
@@ -59,13 +59,13 @@ private List<Position> portfolios = new ArrayList<>();
         return this.balance;
     }
 
-    public List<Position> getPortfolios() {
-        return portfolios;
+    public List<Position> getPortfolio() {
+        return portfolio;
     }
 
     //== 연관관계 편의 메서드 ==//
     public void addPortfolio(Position position) {
-        portfolios.add(position);
+        portfolio.add(position);
         position.setUserAccount(this);
     }
 

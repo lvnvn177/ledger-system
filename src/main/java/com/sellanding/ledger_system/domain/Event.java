@@ -40,7 +40,7 @@ public class Event {
     private Integer version;
 
     @Column(nullable = false)
-    private LocalDateTime timestamp;
+    private LocalDateTime timeStamp;
 
     @Column(nullable = false, length = 5000)
     private String eventData;
@@ -83,7 +83,7 @@ public class Event {
     }
 
     public LocalDateTime getTimestamp() {
-        return timestamp;
+        return timeStamp;
     }
 
     public String getEventData() {
@@ -105,7 +105,7 @@ public class Event {
         private EventBuilder() {
             event = new Event();
             event.eventId = UUID.randomUUID().toString();
-            event.timestamp = LocalDateTime.now();
+            event.timeStamp = LocalDateTime.now();
             event.version = 1;
         }
 
@@ -164,7 +164,7 @@ public class Event {
                 ", eventType=" + eventType +
                 ", aggregateId='" + aggregateId + '\'' +
                 ", version=" + version +
-                ", timestamp=" + timestamp +
+                ", timeStamp=" + timeStamp +
                 '}';
     }
 }
