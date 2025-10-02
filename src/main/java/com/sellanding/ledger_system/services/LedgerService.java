@@ -127,7 +127,6 @@ public class LedgerService {
         Order order = Order.builder()
                 .userAccount(user)
                 .assetTicker(requestDto.getAssetTicker())
-                .orderType(requestDto.getOrderType())
                 .side(requestDto.getSide())
                 .quantity(requestDto.getQuantity())
                 .price(requestDto.getPrice())

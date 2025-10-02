@@ -6,7 +6,7 @@ import com.sellanding.ledger_system.domain.enums.OrderStatus;
 import java.time.LocalDateTime;
 
 
-public class TransactionResponseDto {
+public final class TransactionResponseDto {
 
     private final Long orderId;
     private final OrderStatus status;

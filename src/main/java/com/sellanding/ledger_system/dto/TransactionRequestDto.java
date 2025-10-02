@@ -2,23 +2,20 @@ package com.sellanding.ledger_system.dto;
 
 import com.sellanding.ledger_system.domain.enums.AssetTicker;
 import com.sellanding.ledger_system.domain.enums.OrderSide;
-import com.sellanding.ledger_system.domain.enums.OrderType;
+
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 import java.math.BigDecimal;
 
-public class TransactionRequestDto {
+public final class TransactionRequestDto {
 
     @NotNull(message = "사용자 ID는 필수입니다.")
     private Long userId;
 
     @NotNull(message = "자산 티커는 필수입니다.")
     private AssetTicker assetTicker;
-
-    @NotNull(message = "주문 유형은 필수입니다.")
-    private OrderType orderType;
 
     @NotNull(message = "거래 방향은 필수입니다.")
     private OrderSide side;
@@ -34,7 +31,6 @@ public class TransactionRequestDto {
 
     public Long getUserId() { return userId; }
     public AssetTicker getAssetTicker() { return assetTicker; }
-    public OrderType getOrderType() { return orderType; }
     public OrderSide getSide() { return side; }
     public Long getQuantity() { return quantity; }
     public BigDecimal getPrice() { return price; }

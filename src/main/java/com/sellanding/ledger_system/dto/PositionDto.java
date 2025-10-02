@@ -5,7 +5,8 @@ import java.math.BigDecimal;
 import com.sellanding.ledger_system.domain.Position;
 import com.sellanding.ledger_system.domain.enums.AssetTicker;
 
-public class PositionDto {
+public final class PositionDto {
+    
     private final AssetTicker assetTicker;
     private final Long quantity;
     private final BigDecimal averageBuyPrice;

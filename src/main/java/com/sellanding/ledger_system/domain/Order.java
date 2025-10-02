@@ -3,7 +3,6 @@ package com.sellanding.ledger_system.domain;
 import com.sellanding.ledger_system.domain.enums.AssetTicker;
 import com.sellanding.ledger_system.domain.enums.OrderSide;
 import com.sellanding.ledger_system.domain.enums.OrderStatus;
-import com.sellanding.ledger_system.domain.enums.OrderType;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -37,10 +36,6 @@ public class Order {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private OrderType orderType;
-
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private OrderSide side;
 
     @Column(nullable = false)
@@ -57,10 +52,9 @@ public class Order {
     private LocalDateTime timestamp;
 
     @Builder
-    public Order(UserAccount userAccount, AssetTicker assetTicker, OrderType orderType, OrderSide side, Long quantity, BigDecimal price, OrderStatus status, LocalDateTime timestamp) {
+    public Order(UserAccount userAccount, AssetTicker assetTicker, OrderSide side, Long quantity, BigDecimal price, OrderStatus status, LocalDateTime timestamp) {
         this.userAccount = userAccount;
         this.assetTicker = assetTicker;
-        this.orderType = orderType;
         this.side = side;
         this.quantity = quantity;
         this.price = price;

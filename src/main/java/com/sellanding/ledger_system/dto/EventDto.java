@@ -1,5 +1,5 @@
 package com.sellanding.ledger_system.dto;
 
-public class EventDto {
+public final class EventDto {
     
 }

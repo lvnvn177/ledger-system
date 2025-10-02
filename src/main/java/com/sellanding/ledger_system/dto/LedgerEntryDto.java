@@ -7,7 +7,7 @@ import com.sellanding.ledger_system.domain.LedgerEntry;
 import com.sellanding.ledger_system.domain.enums.AssetTicker;
 import com.sellanding.ledger_system.domain.enums.LedgerEntryType;
 
-public class LedgerEntryDto {
+public final class LedgerEntryDto {
 
     private final String entryId;
     private final LedgerEntryType type;
