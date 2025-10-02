@@ -7,6 +7,7 @@ import com.sellanding.ledger_system.domain.UserAccount;
 import com.sellanding.ledger_system.domain.enums.LedgerEntryType;
 import com.sellanding.ledger_system.domain.enums.OrderSide;
 import com.sellanding.ledger_system.domain.enums.OrderStatus;
+import com.sellanding.ledger_system.dto.LedgerEntryDto;
 import com.sellanding.ledger_system.dto.TransactionRequestDto;
 import com.sellanding.ledger_system.dto.TransactionResponseDto;
 import com.sellanding.ledger_system.repositories.LedgerRepository;
@@ -19,8 +20,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -150,5 +153,30 @@ public class LedgerService {
                 .timestamp(LocalDateTime.now())
                 .build();
         ledgerRepository.save(entry);
+    }   
+    
+    /**
+     * 사용자의 원장 내역을 조회 (선택적으로 기간 필터링 가능)
+     * @param userId 사용자 ID
+     * @param startDate 조회 시작 날짜 (null 가능)
+     * @param endDate 조회 종료 날짜 (null 가능)
+     * @return 해당 사용자의 원장 항목 목록
+     */
+    public List<LedgerEntryDto> getLedgerHistory (Long userId, LocalDateTime startDate, LocalDateTime endDate) {
+
+        String userIdStr = String.valueOf(userId);
+        
+        List<LedgerEntry> ledgerEntries;
+
+        // 기간 필터링 
+        if (startDate != null && endDate != null) {
+            ledgerEntries = ledgerRepository.findByUserIdAndTimestampBetween(userIdStr, startDate, endDate);
+        } else {
+            ledgerEntries = ledgerRepository.findByUserId(userIdStr);
+        }
+
+        return ledgerEntries.stream()
+                .map(LedgerEntryDto::from)
+                .collect(Collectors.toList());
     }
 }

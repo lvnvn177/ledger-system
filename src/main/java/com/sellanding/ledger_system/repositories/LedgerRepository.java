@@ -38,7 +38,7 @@ public interface LedgerRepository extends JpaRepository<LedgerEntry, Long>{
      * @param userId 사용자 ID
      * @return 해당 사용자의 모든 원장 항목 목록
      */
-    List<LedgerEntry> findByUserId(String userid);
+    List<LedgerEntry> findByUserId(String userId);
 
     /**
      * 특정 사용자의 특정 유형 원장 항목을 조회
