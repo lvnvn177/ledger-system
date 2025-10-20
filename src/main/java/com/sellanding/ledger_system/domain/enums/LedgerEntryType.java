@@ -6,5 +6,4 @@ public enum LedgerEntryType {
     TRADE_BUY,  // 매수 거래
     TRADE_SELL, // 매도 거래
     FEE,        // 수수료
-    INTEREST    // 이자
 }

@@ -25,7 +25,7 @@ public enum EventType {
     ORDER_REJECTED,         // 주문 거부
     
     // 자산 관련 이벤트
-    ASSET_ACQUIRED,         // 자산 취득
+    ASSET_ACQUIRED,         // 자산 매수
     ASSET_SOLD,             // 자산 매도
     ASSET_TRANSFERRED,      // 자산 이체
     
