@@ -58,6 +58,9 @@ Event
 - 이벤트를 발생시킨 유저 ID 
 
 
+## 
+
+
 
 
 
@@ -132,4 +135,57 @@ Event
 | **관점**      | **회계적 관점** (그래서 얼마가 변했는데?)                                         | **행위적 관점** (그래서 무슨 일이 있었는데?)                                                    |
 | **불변성**    | **절대 불변.** 한 번 기록되면 절대 수정하거나 삭제해서는 안 됨. (수정 시에는 반대 एंट्री를 생성) | **절대 불변.** 발생한 사건은 바꿀 수 없음.                                                      |
 | **주요 용도** | **자산/부채/잔고 계산**, **재무 감사**, **거래 증명**                               | **시스템 상태 복구**, **사용자 행동 분석**, **버그 추적 및 디버깅**, ** MSA 간 데이터 동기화** |
+
+
+## 구현 테스트 시나리오 
+
+
+1. UserAccount 데이터 모델 기반의 사용자 계정 1000개를 생성한다 
+
+2. 각 사용자 계정을 통해 AssetTicker 의 종목 중 랜덤한 종목의 종목 하나를 매수하는 행위를 각 사용자가 동일하게 요청한다
+
+3. 사용자는 
+
+
+# 리팩토링
+
+## REST API 설계 준수
+
+API 주소를 일정한 네이밍 규칙으로 작성하였다.
+
+ex) GET /report/clickheart?reportId={값} -> GET /api/places/{placeId}/reports/{reportId}/hearts
+
+
+## 응답 형식 통일성
+
+ResponseEntity<ApiResponse<T>> 객체로 응답 형식을 통일성있게 하였다.
+
+- ApiResponse(int status, String message, T data) 형식으로 응답 형식 통일 
+
+## 예외처리 
+
+Global Exception Handler 즉, 커스텀 예외 객체를 생성하고 상황에 맞게 예외를 발생시켜 
+서버 오류 메시지 노출을 최소화 하였다 
+
+
+## 무분별한 @Setter 방지를 통한 캡슐화 원칙 준수 
+
+UPDATE 쿼리가 실행되는 필드에만 @Setter 설정 
+
+
+## final 키워드와 @RequiredArgs 생성자 Injection을 통한 싱클톤 빈 생성 
+
+객체 내부 필드의 Spring Bean 간의 의존성 주입, 불변성 보장 
+
+
+
+## 불필요한 @Transactional 제거 
+
+서비스 계층에서 조회 (단일 SELECT 쿼리) 에는 트랜잭션 오버헤드 제거 
+
+
+## SOFT DELETE
+
+ENUM을 활용하여 Status 필드로 물리적인 데이터는 유지하고, ENUM Status로 삭제 여부 판단 
+
 
