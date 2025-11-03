@@ -17,18 +17,12 @@ public class Position {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ORDER_ID")
     private Transaction transaction; // 거래
-
-    private float transactionPrice; // 거래 가격
-    private float quantity; // 거래 수량 
-    
     
     protected Position() {}
 
     public Position(Position position) {
         this.asset = position.asset;
         this.transaction = position.transaction;
-        this.transactionPrice = position.transactionPrice;
-        this .quantity = position.quantity;
     }
 
     public Position getPosition() {

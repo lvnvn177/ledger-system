@@ -1,14 +1,13 @@
 package com.sellanding.ledger_system.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Member {
@@ -21,26 +20,28 @@ public class Member {
 
     private Integer balance;
 
-    @OneToMany(mappedBy = "member")
-    private List<Position> portfolio = new ArrayList<Position>();
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "PORTFOLIO_ID")
+    private Portfolio portfolio;
 
     public Member(String name, int initialPrice) {
         this.name = name;
         this.balance = initialPrice;
     }
 
+    
+    /**
+     * getter
+     */
     public Long getId() { return id; }
 
     public String getName() { return name; }
 
     public int getBalance() { return balance; }
 
-    public List<Position> getPortfolio() { 
-       return portfolio.stream()
-                .map(position -> new Position(position.getPosition()))
-                .collect(Collectors.toUnmodifiableList());
-    }
-
+    /**
+     * setter
+     */
     public void changeName(String newName) {
         this.name = newName;
     }
@@ -54,9 +55,5 @@ public class Member {
         if (amount <= 0) throw new IllegalArgumentException("출금액은 0보다 커야 합니다.");
         if (this.balance < amount) throw new IllegalStateException("잔액 부족");
         this.balance -= amount;
-    }
-
-    public void addPosition(Position position) {
-        this.portfolio.add(position);
     }
 }
