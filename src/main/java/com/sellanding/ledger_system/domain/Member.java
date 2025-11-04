@@ -29,7 +29,6 @@ public class Member {
         this.balance = initialPrice;
     }
 
-    
     /**
      * getter
      */
