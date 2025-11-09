@@ -12,7 +12,7 @@ import jakarta.persistence.*;
 @Table(name = "Transactions")
 public class Transaction {
     
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "TRANSACTION_ID")
     private Long id;
 

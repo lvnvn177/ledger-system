@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "POSITION")
 public class Position {
     
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "POSITION_ID")
     private Long id;
 
@@ -17,6 +17,10 @@ public class Position {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TRANSACTION_ID")
     private Transaction transaction; // 거래
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "PORTFOLIO_ID")
+    private Portfolio portfolio;
     
     protected Position() {}
 
