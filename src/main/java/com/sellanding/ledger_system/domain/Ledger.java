@@ -2,6 +2,7 @@ package com.sellanding.ledger_system.domain;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,11 +36,9 @@ public class Ledger {
     @Column(name = "TOTAL_PROFIT")
     private BigDecimal totalProfit = BigDecimal.ZERO;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
 
     protected Ledger() {}
     

@@ -3,7 +3,7 @@ package com.sellanding.ledger_system.domain;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "ORDER_ITEM")
+@Table(name = "POSITION")
 public class Position {
     
     @Id @GeneratedValue
@@ -15,7 +15,7 @@ public class Position {
     private Asset asset; // 거래 종목 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ORDER_ID")
+    @JoinColumn(name = "TRANSACTION_ID")
     private Transaction transaction; // 거래
     
     protected Position() {}

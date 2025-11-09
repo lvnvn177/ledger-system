@@ -23,7 +23,7 @@ public class Member {
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "PORTFOLIO_ID")
     private Portfolio portfolio;
-
+    
     public Member(String name, int initialPrice) {
         this.name = name;
         this.balance = initialPrice;

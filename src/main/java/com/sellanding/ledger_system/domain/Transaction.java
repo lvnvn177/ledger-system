@@ -1,7 +1,7 @@
 package com.sellanding.ledger_system.domain;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import com.sellanding.ledger_system.domain.enums.TransactionStatus;
@@ -13,7 +13,7 @@ import jakarta.persistence.*;
 public class Transaction {
     
     @Id @GeneratedValue
-    @Column(name = "ORDER_ID")
+    @Column(name = "TRANSACTION_ID")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -27,9 +27,8 @@ public class Transaction {
     @JoinColumn(name = "LEDGER_ID")
     private Ledger ledger; // 거래 정보 
 
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "TRANSACTION_DATE", nullable = false)
-    private Date TransactionDate; // 거래 시간 
+    private LocalDateTime transLocalDate; // 거래 시간 
 
     @Enumerated(EnumType.STRING)
     @Column(name = "TRANSACTION_STATUS", nullable = false)
